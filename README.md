@@ -1,16 +1,45 @@
-# language_learning_app
+# Toku - Japanese Learning App 🇯🇵
 
-A new Flutter project.
+تطبيق **Toku** هو تطبيق لتعلم اللغة اليابانية للمبتدئين، تم بناؤه باستخدام **Flutter**. يهدف التطبيق إلى تسهيل تعلم المفردات الأساسية من خلال واجهة بسيطة وتفاعلية تدعم النطق الصوتي لكل كلمة.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📸 App Interface
 
-A few resources to get you started if this is your first Flutter project:
+في هذا القسم، يمكنك عرض صور واجهة التطبيق. تأكدي من استبدال `image_path` بالمسار الصحيح للصورة في مشروعك.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+| Home Screen | Categories |
+| :---: | :---: |
+| ![Home Page](./assets/images/home_screen.png) | ![Numbers Page](./assets/images/numbers_page.png) |
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+> **نصيحة:** لنتائج أفضل، ارفعي الصور داخل مجلد `screenshots` في المستودع الخاص بكِ ثم استبدلي الروابط أعلاه.
+
+---
+
+## ✨ Features
+
+* **Learning Categories:** يضم التطبيق تصنيفات مختلفة تشمل (الأرقام، أفراد العائلة، الألوان، والعبارات الشائعة).
+* **Audio Interaction:** عند الضغط على أي عنصر، يتم تشغيل نطق صوتي ياباني دقيق.
+* **Custom UI Components:** استخدام Widgets مخصصة لضمان تناسق التصميم وسهولة التعديل.
+* **Performance:** التطبيق خفيف وسريع الاستجابة بفضل هيكلية الكود المنظمة.
+
+---
+
+## 🛠️ Tech Stack
+
+* **Framework:** [Flutter](https://flutter.dev)
+* **Language:** Dart
+* **Packages:** * `audioplayers`: للتعامل مع ملفات الصوت.
+
+---
+
+## 📂 Project Structure
+
+المشروع يتبع نمطاً منظماً لتسهيل عملية التطوير:
+
+```text
+lib/
+├── components/    # يحتوي على الـ Widgets المشتركة مثل ListItem
+├── models/        # تعريف بيانات الكلمات والعبارات
+├── screens/       # شاشات التطبيق الرئيسية (Home, Numbers, Colors...)
+└── main.dart      # نقطة انطلاق التطبيق
